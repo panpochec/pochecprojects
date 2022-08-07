@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Schiff bases: Part 2</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="Shiff1.html">Schiff bases: part 1</a></li>
+						<li><a href="Shiff2.html">Schiff bases: part 2</a></li>
+						<li><a href="GaussianMaster.html">GaussianMaster</a></li>
+						<li><a href="scifolio.html">Sci-folio</a></li>
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Schiff bases: data analysis and visualisation</h1>
+									</header>
+									<p align="justify">Second part of the project consisted of analyzing and visualizing data from Part 1.</p>
+									<p align="justify">Having all of the data in one place allowed the multi-step analysis, consisting of building subsets of data, transforming and pivoting subsets and statistical analysis. Unfortunatelly, I can't reveal all of the data or even siginificant parts of the figures, because these studies are still waiting for publication. It should be noted, that the code used in this leg of work is much cleaner and sofisticated then the one used in the previous section, as develpment wasn't as rushed.</p>
+									
+								</div>
+							</section>
+							<section id="two" class="spotlights">
+								<section>
+									
+									<img src="images/csv.jpg" alt="" data-position="25% 25%" />
+									
+									<div class="content">
+										<div class="inner">
+											<p>Part of the dataset from Part 1, in csv form.<br> 
+											
+												<p align="justify">Data from step one was loaded to the script in pd.DataFrame form.</p>
+												<p align="justify">Then, it was subseted for different kind of information, allowing summary statistics for all of the different substitution patterns to be constructed. In this step pivot tables were also build, in prepration for the visualization steps to be performed.</p>
+												<p align="justify"></p>
+											
+										</div>
+									</div>
+								</section>
+							</section>
+							<section id="one">
+									<div class="inner">
+										<p align="justify">As the tables were pivoted, it was imperative to fill the missing data. At this stage it was neccessary to trasform from A-B naming scheme to Proximal-Distal in relation to the scanned bridge. The studied compounds were symmetrical and that means if ring B is substituted by Br on position 3 it was scanned on two bridges - A and B. This gives information about energy profile of proximal Br - 3 substitution and distal Br - 3 substitution. Similarly, with ring A substituted in Br - 3 pattern and ring B in NO<sub>2</sub> - 1 pattern, that means we have data for "Proximal Br - 3, Distal NO<sub>2</sub> - 1" substitution, but also for "Proximal NO<sub>2</sub> - 1, Distal Br - 3" substitution.  </p>
+										<p align="justify">For tables containing different sets of data basic statistical analysis was performed - mean, standard deviation, maximal and minimal values for proximal and distal effect was recorded for parameters such as activation energy, second energy minimum charges and more.</p>
+									</div>
+									
+							</section>
+							<section id="two" class="spotlights">
+								<section>
+									<div class="content">
+										<div class="inner">
+											<p align="justify">Part of the typical table containing statystycial analysis for a single parameter<br>
+											The header (highlighted) includes information about functional and basis set used for calculation, followed by the name for the generated logfile, charge and multiplicity.</p>
+											
+										</div>
+									</div>
+									<img src="images/stat.jpg" alt="" data-position="0% 0%" />
+								</section>
+							</section>
+							<section id="two" class="spotlights">
+								<section>
+								<img src="images/figure1.png" alt="" data-position="center center" />
+									<div class="content">
+										<div class="inner">
+											<p align="justify">The final section of the analysis was ploting heatmaps and preparing charge distribution schemes.</p>
+											<p align="justify">Heatmaps were prepared using Seaborn package upon the basis of pivot tables with proximal substitution as index and distal substitution as columns. Multiple different heatmaps were prepared to present key parameters that may be have direct effects on bridge activation energy and second minimum. </p>
+											<p align="justify">Heatmaps were then connected with charge distribution schemes for proximal substitution, for which data were acquired using single-point Hirschfeld charges population distribution. Schemes were prepared using Pillow package, with sizes and colors of the circles corresponding to the charge difference from non-substituted entity.</p>
+											<p align="justify">The in-depth data analysis with conclusions will be fully available when material from those studies will be published. But considering everything described, this line of research has proven not only to yield sigificant results to date, but hase a great potential for future expansion.</p>	
+											<ul class="actions">
+												<li><a href="https://github.com/panpochec/LibraryAnalysis" target="_blank" class="button">GitHub repository of library analysis script</a></li>
+											</ul>										
+										</div>
+									</div>
+								</section>
+							
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://github.com/panpochec/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/micha%C5%82-poche%C4%87-b03a8a246/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Michał Pocheć PtysioCreACTIONS 2022, </li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
