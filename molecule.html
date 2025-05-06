@@ -410,7 +410,7 @@ async function __main__() {
         for (var ρσ_Index7 of ρσ_Iter7) {
             x = ρσ_Index7;
             "184";
-            atom = sphere();
+            atom = ρσ_interpolate_kwargs.call(this, sphere, [ρσ_desugar_kwargs({emissive: true})]);
             "185";
             single_frame = ρσ_getitem(self.atoms_trajectories, 0);
             "186";
@@ -443,7 +443,7 @@ async function __main__() {
         for (var ρσ_Index8 of ρσ_Iter8) {
             item = ρσ_Index8;
             "200";
-            new_bond = ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: ρσ_getitem(item, 0), axis: ρσ_getitem(item, 1), radius: .1})]);
+            new_bond = ρσ_interpolate_kwargs.call(this, cylinder, [ρσ_desugar_kwargs({pos: ρσ_getitem(item, 0), axis: ρσ_getitem(item, 1), radius: .1, emissive: true})]);
             "201";
             self.bonds.append(new_bond);
         }
